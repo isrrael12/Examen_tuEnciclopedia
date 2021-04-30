@@ -1,0 +1,30 @@
+ <div class="container">
+     <div class="row">
+         <div class="col-sm-8">
+             <h1>Probabilidad de la casa apuesta(PCA)</h1>
+             <b>Es la probabilidad asignada por la casa de apuesta a cada posible resultado de un evento
+                 deportivo.</b>
+         </div>
+     </div>
+     <div class="row">
+         <div class="col-sm-8">
+             <form action="<?= URL ?>apuesta/pca" method="POST">
+                 <div class="form-group">
+                     <label for="">Cuota:</label>
+                     <input type="number" id="cuota" name="cuota" class="form-control" value="<?= $data['cuota'] ?>" step="1" required>
+                 </div>
+                 <br>
+                 <div class="form-group">
+                     <button type="submit" class="btn btn-primary">Calcular</button>
+                 </div>
+             </form>
+         </div>
+     </div>
+     <br>
+     <div class="row">
+         <div class="col-sm-8">
+             Resultado: <label>probabilidad de la casa apuesta </label>
+             <input type="text" class="form-control" value=" <?= $data['pca'] ?>" disabled>
+         </div>
+     </div>
+ </div>

@@ -1,0 +1,33 @@
+ <div class="container">
+     <div class="row">
+         <div class="col-sm-8">
+             <h1>Ganancia neta</h1>
+             <b>Es la cantidad de dinero que ganarás en base a la apuesta y a la cuota asignada.</b>
+         </div>
+     </div>
+     <div class="row">
+         <div class="col-sm-8">
+             <form action="<?= URL ?>apuesta/gananciaNeta" method="POST">
+                 <div class="form-group">
+                     <label for="">Apuesta:</label>
+                     <input type="number" id="apuesta" name="apuesta" class="form-control" value="<?= $data['apuesta'] ?>" step="1" required>
+                 </div>
+                 <div class="form-group">
+                     <label for="">Cuota:</label>
+                     <input type="number" id="cuota" name="cuota" class="form-control" value="<?= $data['cuota'] ?>" step="1" required>
+                 </div>
+                 <br>
+                 <div class="form-group">
+                     <button type="submit" class="btn btn-primary">Calcular</button>
+                 </div>
+             </form>
+         </div>
+     </div>
+     <br>
+     <div class="row">
+         <div class="col-sm-8">
+             Resultado: <label>ganancia neta </label>
+             <input type="text" class="form-control" value=" <?= $data['neta'] ?>" disabled>
+         </div>
+     </div>
+ </div>
