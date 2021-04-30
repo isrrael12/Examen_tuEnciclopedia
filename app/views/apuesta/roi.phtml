@@ -1,6 +1,6 @@
  <div class="container">
      <div class="row">
-         <div class="col-sm-8">
+         <div class="col-sm-12">
              <h1>Retorno de inversion(ROI)</h1>
              <b>Retorno de inversión es una métrica que nos indica cuánto dinero genera nuestro dinero
                  apostado.</b>
@@ -8,7 +8,12 @@
          </div>
      </div>
      <div class="row">
-         <div class="col-sm-8">
+         <div class="col-sm-6">
+             <br>
+             <br><br>
+             <img src="../img/rdi.jpg" alt="">
+         </div>
+         <div class="col-sm-6">
              <form action="<?= URL ?>apuesta/roi" method="POST">
                  <div class="form-group">
                      <label for="">Apuesta:</label>
@@ -35,13 +40,11 @@
                  <div class="form-group">
                      <button type="submit" class="btn btn-primary">Calcular</button>
                  </div>
+                 <div class="form-group">
+                     Resultado: <label>retorno de inversion </label>
+                     <input type="text" class="form-control" value=" <?= $data['roi'] ?>" disabled>
+                 </div>
              </form>
-         </div>
-     </div>
-     <div class="row">
-         <div class="col-sm-8">
-             Resultado: <label>retorno de inversion </label>
-             <input type="text" class="form-control" value=" <?= $data['roi'] ?>" disabled>
          </div>
      </div>
  </div>

@@ -1,6 +1,6 @@
  <div class="container">
      <div class="row">
-         <div class="col-sm-8">
+         <div class="col-sm-12">
              <h1>Esperanza matematica</h1>
              <b>Es una forma de medir si a largo plazo una apuesta será beneficiosa
                  o no para el jugador. Si la Esperanza Matemática es menor que 1 el juego es “desfavorable
@@ -8,7 +8,14 @@
          </div>
      </div>
      <div class="row">
-         <div class="col-sm-8">
+         <div class="col-sm-6">
+             <br>
+
+             <img src="../img/esperanza.png" alt="">
+         </div>
+         <div class="col-sm-6">
+             <br>
+             <br>
              <form action="<?= URL ?>apuesta/esperanzaMatematica" method="POST">
                  <div class="form-group">
                      <label for="">Cuota:</label>
@@ -22,14 +29,12 @@
                  <div class="form-group">
                      <button type="submit" class="btn btn-primary">Enviar</button>
                  </div>
+                 <div class="form-group">
+                     Respuesta: <label>Esperanza matematica </label>
+                     <input type="text" class="form-control" value=" <?= $data['esperanza'] ?>" disabled>
+                 </div>
              </form>
          </div>
      </div>
-     <br>
-     <div class="row">
-         <div class="col-sm-8">
-             Respuesta: <label>Esperanza matematica </label>
-             <input type="text" class="form-control" value=" <?= $data['esperanza'] ?>" disabled>
-         </div>
-     </div>
+
  </div>
