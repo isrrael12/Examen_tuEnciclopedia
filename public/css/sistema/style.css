@@ -23,7 +23,7 @@ h2{
     p{
         color:black;
         text-align: center;
+        font-size:large ;
+        font-style: inherit;
     }
-    card mb-3{
-
-    }
+  

@@ -10,9 +10,18 @@
 
 <body>
     <h1>Principio de responsabilidad unica</h1>
-    <p>Una clase sólo debe tener un motivo para cambiar, lo que significa que sólo debe tener una tarea.</p>
-<p>Por ejemplo:</p>
-
+    <b>"Una clase sólo debe tener un motivo para cambiar, lo que significa que sólo debe tener una tarea."</b>
+    <b>Por ejemplo:</b>
+    <p>Tenemos varias figuras de las que después queremos calcular su área total:</p>
+    <p>Cuadrado</p>
+    <img src="../img/srp.png" alt="">
+    <p>Circulo</p>
+    <img src="../img/srp_2.png" alt="">
+    <p>Primero creamos las clases de las figuras y dejamos que los constructores se encarguen de recibir las medidas necesarias.
+        Ahora creamos la clase AreaCalculator, que recibe un array con los objetos de cada una de las figuras para ser sumadas:</p>
+    <img src="../img/srp_3.png" alt="">
+    <p>Para utilizar la clase AreaCalculator simplemente instanciamos la clase y le pasamos un array con las figuras, mostrando el output al final:</p>
+    <img src="../img/srp_4.png" alt="">
 </body>
 
 </html>

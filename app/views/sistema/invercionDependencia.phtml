@@ -10,9 +10,27 @@
 
 <body>
     <h1>Principio de invercion de dependencia</h1>
-    <p>Las entidades deben depender de abstracciones no de concreciones. 
-    El módulo de alto nivel no debe depender del módulo de bajo nivel, 
-    pero deben depender de abstracciones.</p>
+    <b>Las entidades deben depender de abstracciones no de concreciones.
+        El módulo de alto nivel no debe depender del módulo de bajo nivel,
+        pero deben depender de abstracciones.</b>
+    <br>
+    <b>Por ejemplo</b>
+    <p>Creamos la interface IMail que define la
+        funcionalidad “send”</p>
+    <img src="../img/dip.png" alt="">
+    <p>La clase MailChimp y YouMail implementan
+        la interface IMail (firma el contrato)</p>
+    <img src="../img/dip_2.png" alt="">
+    <br>
+    <br>
+
+    <img src="../img/dip_3.png" alt="">
+    <p>La clase Order ya no depende de una concreción
+        sino ahora depende de una abstracción, es decir de
+        la interface Imail, de tal manera que cualquier clase
+        que la implemente podrá ser usado por Orders
+        para el envío de correo electrónico.</p>
+    <img src="../img/dip_4.png" alt="">
 </body>
 
 </html>

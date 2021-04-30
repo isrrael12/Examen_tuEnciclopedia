@@ -10,10 +10,25 @@
 
 <body>
     <h1>Principio de sustitucion de liskov</h1>
-    <p>Si S es una subclase de T, entonces los objetos de T podrían ser 
-    substituidos por objetos del tipo S sin alterar las propiedades del 
-    problema. Esto es, cada clase que hereda de otra puede usarse como su 
-    padre sin necesidad de conocer las diferencias entre ellas.</p>
+    <b>"Si S es una subclase de T, entonces los objetos de T podrían ser
+        substituidos por objetos del tipo S sin alterar las propiedades del
+        problema. Esto es, cada clase que hereda de otra puede usarse como su
+        padre sin necesidad de conocer las diferencias entre ellas."</b>
+    <br>
+    <b>Por ejemplo:</b>
+    <p>Tenemos varios animales</p>
+    <p>tenemos la clase abstracta </p>
+    <img src="../img/lcp_5.png" alt="">
+    <p>La clase gato heredaa de clase abstracta animal</p>
+    <img src="../img/lcp.png" alt="">
+    <p>La clase perro hereda de clase abstracta animal</p>
+    <img src="../img/lcp_2.png" alt="">
+    <p>La clase pescado heredaa de clase abstracta animal</p>
+    <img src="../img/lcp_3.png" alt="">
+    <p>La clase tortuga heredaa de clase abstracta animal</p>
+    <img src="../img/lcp_4.png" alt="">
+    <p>Clase dueño creamos los objetos de cada clase de animal con su respectivos parametros y le pasamos como parametro al metodo alimentar los objetos creados. </p>
+    <img src="../img/lcp_6.png" alt="">
 </body>
 
 </html>
